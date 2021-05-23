@@ -1,0 +1,9 @@
+.navbar {
+  padding: 0;
+}
+
+header img {
+  height: 115px;
+  width: 150px;
+  cursor: pointer;
+}

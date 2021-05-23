@@ -23,6 +23,7 @@ const products = [
     rating: 4.0,
     numReviews: 8,
   },
+
   {
     name: 'Cannon EOS 80D DSLR Camera',
     image: '/images/camera.jpg',
