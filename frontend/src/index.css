@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+  --color-1: #162b32;
+  --color-1-pale: #203a44;
+  --color-2: #f35345;
+  --color-2-pale: #e26054;
+  --color-white: #fff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f8f7;
+}
+
 main {
   min-height: 80vh;
 }
@@ -16,6 +31,110 @@ h1 {
   padding: 1rem 0;
 }
 
+strong {
+  font-size: 0.9rem;
+}
+
+.navbar {
+  font-size: 1rem;
+}
+
+.dropdown-item {
+  font-size: 0.9rem;
+}
+
+.container {
+  max-width: 70%;
+}
+
 .rating span {
   margin: 0.08rem;
+}
+
+.btn-color-primary {
+  background-color: var(--color-1);
+  outline: none;
+}
+
+.btn-color-primary:hover {
+  background-color: var(--color-1-pale);
+}
+
+.btn-color-primary:focus {
+  background-color: var(--color-1-pale);
+}
+
+.btn-color-primary:active {
+  background-color: var(--color-1-pale);
+}
+
+.btn-color-secondary {
+  background-color: var(--color-2);
+  outline: none;
+  transition: 0.45s ease;
+}
+
+.btn-color-secondary:hover {
+  /* background-color: var(--color-2-pale); */
+  border: 1px solid var(--color-2);
+  outline: none;
+  transform: scale(0.95);
+}
+
+.form-control {
+  border: 1px solid rgba(35, 43, 43, 0.075);
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+}
+
+.form-control:focus {
+  /* border: 1px solid rgba(35, 43, 43, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.btn {
+  transition: 0.25s ease-in;
+}
+
+.btn:focus {
+  background-color: var(--color-1-pale);
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* carousel */
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
 }

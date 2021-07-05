@@ -2,6 +2,11 @@
   padding: 0;
 }
 
+.nav-bg-color {
+  background-color: #162b32;
+  background-image: linear-gradient(335deg, #171717 0%, #162b32 74%);
+}
+
 header img {
   height: 115px;
   width: 150px;

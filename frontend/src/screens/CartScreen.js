@@ -17,7 +17,6 @@ const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id;
 
   const qty = location.search ? Number(location.search.split('=')[1]) : 1;
-  console.log(qty);
 
   const dispatch = useDispatch();
 
@@ -106,7 +105,7 @@ const CartScreen = ({ match, location, history }) => {
             <ListGroup.Item>
               <Button
                 type="button"
-                className="btn-block btn-warning"
+                className="btn-block btn-color-secondary"
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >

@@ -42,6 +42,7 @@ const RegisterScreen = ({ location, history }) => {
       <h1>Sign Up</h1>
       {message && <Message variant="danger">{message}</Message>}
       {error && <Message variant="danger">{error}</Message>}
+      {loading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
@@ -49,7 +50,7 @@ const RegisterScreen = ({ location, history }) => {
             type="text"
             placeholder="Enter your name"
             value={name}
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setName(e.target.value)}
           ></Form.Control>
         </Form.Group>
         <Form.Group controlId="email">
